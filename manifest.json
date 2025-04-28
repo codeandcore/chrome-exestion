@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "CNC kedarnath",
+  "version": "0.2",
+  "author": "codeandcore",
+  "description": "Lorem ipsum",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
